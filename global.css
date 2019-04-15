@@ -1,0 +1,28 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* global */
+.center {
+    width: 1170px;
+}
+
+
+
+/* grid */
+.container{
+    display: grid;
+}
+.nav-bar,
+.side-bar{
+}
+
+
+.header .sub-infor {
+    
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
