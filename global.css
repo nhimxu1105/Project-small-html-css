@@ -4,18 +4,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* global */
 .center {
     width: 1170px;
 }
 
+.sub-title {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sub-title h2 {
+    color: #333;
+    opacity: 0.7;
+}
+
+.sub-title .ngang {
+    width: 50px;
+    border: 0.5px solid red;
+    margin: 15px auto;
+}
+
+.sub-title p {
+    font-size: 14px;
+    opacity: 0.7;
+}
 
 
 /* grid */
 
 .header .sub-infor {
-    
+
     height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+/* grid-recent */
+.container-recent .recent-works .sub-infor-recent{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
 }
