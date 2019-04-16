@@ -3,6 +3,7 @@ nav {
     top: 0;
     height: 80px;
     background-color: white;
+    z-index: 100;
 }
 
 .nav-bar {
@@ -63,8 +64,12 @@ nav {
 }
 
 .nav-bar .menu>li:hover .submenu {
-    transform: translateY(0);
-    transition: all 0.8s;
     border-top: 0.5px solid #f00;
     display: block;
+    animation: len 1s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+@keyframes len{
+    from{transform: translateY(10px); display: none}
+    to{transform: translateY(0px); display: block};
 }
