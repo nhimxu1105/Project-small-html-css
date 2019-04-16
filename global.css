@@ -49,3 +49,13 @@
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 30px;
 }
+
+/* grid-bg-attachment */
+.container-bg {
+    display: grid;
+    height: 300px;
+}
+.container-bg .content-bg {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
